@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Cleaner</title>
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: system-ui, Arial, sans-serif;
+      padding: 12px;
+      width: 280px
+    }
+
+    h1 {
+      font-size: 16px;
+      margin: 0 0 10px
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin: 6px 0;
+      border: 0;
+      border-radius: 10px;
+      cursor: pointer
+    }
+
+    #go {
+      background: #0a66c2;
+      color: #fff
+    }
+
+    #start {
+      background: #08a045;
+      color: #fff
+    }
+
+    #stop {
+      background: #b23;
+      color: #fff
+    }
+
+    #status {
+      font-size: 12px;
+      color: #555;
+      margin-top: 8px;
+      min-height: 18px
+    }
+
+    .row {
+      display: flex;
+      gap: 8px
+    }
+
+    .row>button {
+      flex: 1
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #eee;
+      margin-left: 6px
+    }
+  </style>
+</head>
+
+<body>
+  <img src="img/img.jpg" width="100%" alt="">
+  <button id="go">Ir para Conexões</button>
+  <div class="row">
+    <button id="start">Iniciar limpeza</button>
+    <button id="stop">Parar</button>
+  </div>
+  <div id="status">Pronto.</div>
+  <script src="popup.js"></script>
+  <a href="https://www.linkedin.com/in/lucaspedruo/" target="_blank">Lucas Pedro - Linkedin</a>
+</body>
+
+</html>

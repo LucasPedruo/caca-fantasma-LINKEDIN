@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Caça-Fantasma LinkedIn",
+  "version": "1.0.3",
+  "description": "Removedor de conexões aleatórias.",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.linkedin.com/*"
+  ],
+  "action": {
+    "default_title": "Cleaner",
+    "default_popup": "popup.html",
+     "default_icon": {
+      "16": "/img/16.png",
+      "48": "/img/48.png",
+      "128": "/img/128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "/img/16.png",
+    "48": "/img/48.png",
+    "128": "/img/128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.linkedin.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
